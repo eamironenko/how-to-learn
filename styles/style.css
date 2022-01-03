@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
 }
 
-.logo_place_header  {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -52,6 +52,10 @@
   line-height: 25px;
   font-size: 18px;
   z-index: 2;
+}
+
+.link {
+  color: #2f80ed;
 }
 
 div {
