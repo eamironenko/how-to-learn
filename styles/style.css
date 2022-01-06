@@ -23,8 +23,8 @@
 .logo {
   width: 183px;
   height: 32px;
-  background-image: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
+  /*background-image: url(../images/logo_place_header.svg);
+  background-repeat: no-repeat;*/
 }
 
 .logo_place_header {
@@ -53,12 +53,9 @@
   z-index: 2;
 }
 
-.link {
+.header__link {
   color: #2f80ed;
-}
-
-div {
-  display: block;
+  text-decoration: none;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -82,11 +79,8 @@ div {
   z-index: 1;
 }
 
-section {
-  display: block;
-}
-
 .description {
+  display: block;
   margin-top: 100px; 
 }
 
@@ -104,12 +98,13 @@ section {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: #2F80ed;  
+  color: #2F80ed;
 }
 
-h2 {
+.two-columns__brief_text {
   margin-top: 0;
 }
+
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
@@ -131,11 +126,12 @@ h2 {
 }
 
 .digits {
+  display: block;
   margin-top: 100px;
   margin-bottom: 100px;  
 }
 
-.section__title {  
+.digits__title {  
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -144,7 +140,7 @@ h2 {
   width: 60%;
 }
 
-.section__subtitle {
+.digits__subtitle {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -183,10 +179,13 @@ h2 {
 }
 
 .feynman {
+  display: block;
+  padding-top: 100px;
+  /*Размеры заданы в макете к проектной работе 1*/
   height: 890px;
   position: relative;
   background-color: #f2f2f2;
-  z-index: -2;
+  z-index: 0;
 }
 
 .feynman__title {
@@ -211,6 +210,7 @@ h2 {
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
   position: absolute;
   top: 50%;
   right: 48px;
@@ -228,20 +228,40 @@ h2 {
 
 .kaufman {
   display: block;
+  display: block;
   padding: 90px 0;
   background-color: #1F1F1F;
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
-.section__title_theme_dark { 
+.kaufman__title {  
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
+.kaufman__title_theme_dark { 
   color: white;
   position: relative;
   z-index: 1;
 }
 
-.section__subtitle_theme_dark {
+.kaufman__subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  width: 60%;
+  padding: 0 20% 0;
+  margin: 20px auto 0;
+}
+
+.kaufman__subtitle_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
@@ -269,6 +289,8 @@ h2 {
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
   top: 0;
   right: -210px;
@@ -276,59 +298,66 @@ h2 {
 }
 
 .footer {
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 40px;
-  position: relative;
+  height: 350px;
   background-color: #1F1F1F;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: space-between;
   width: 90%;
-  min-height: 350px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   color: white;
-  }
-
-.footer__columns_content_copyright {
-  width: 711px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  }
-
-.logo__place_footer {
-  height: 35px;
-  color: #f2f2f2;
 }
+
+.footer__column {
+  min-height: 250px;
+}
+
+.footer_column_content_copyright {
+  width: 711px;
+  position: relative;
+}
+
+.logo_place_footer {
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+
 .footer__author {
   margin: 18px 0 18px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.footer__columns_content_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  }
+.footer__column_content_info {
+  margin-left: 0;
+}
 
 .footer__column-heading {
   font-weight: bold;
   line-height: 30px;
   font-size: 18px;
-  }
+  color: white;
+  margin: 0;
+}
 
 .footer__column-links {
-  padding: 0;
-  margin-top: 20px 0 16px 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   list-style-type: none;
+  padding-left: 0;
+  margin: 20px 0 16px;
 }
 
 .footer__column-link {
@@ -336,11 +365,9 @@ h2 {
   text-decoration: none;
 }
 
-.footer__columns_content_social {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  }
+.footer__column_content_social {
+   margin-left: 0;
+}
 
 .footer__social-icon {
   height: 16px;
