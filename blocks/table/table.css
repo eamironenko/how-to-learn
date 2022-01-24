@@ -1,0 +1,10 @@
+.table {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 1100px;  
+    }
+    
