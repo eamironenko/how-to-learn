@@ -360,10 +360,10 @@
 }
 
   
-.resources {
+/*.resources {
   box-sizing: border-box;
   padding-top: 100px;
-  /*position: relative;*/
+  /*position: relative;
   border: 1px solid blueviolet;
   }
 
@@ -381,7 +381,7 @@
     height: 38px;
     margin: 0;
     border: 1px solid red;
-  }
+  } */
 
   /*.khan {
     box-sizing: border-box;
