@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+/*.header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -20,18 +20,18 @@
   /* выше установили ограничения для секции */
 }
 
-.logo {
+/*.logo {
   width: 183px;
   height: 32px;
-}
+}*/
 
-.logo_place_header {
+/*.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-}
+}*/
 
-.header__title {
+/*.header__title {
   max-width: 730px;
   margin: 0 0 0 64px;
   line-height: 96px;
@@ -39,9 +39,9 @@
   text-align: left;
   font-weight: bold;
   z-index: 2;  
-}
+}*/
 
-.header__subtitle {
+/*.header__subtitle {
   max-width: 388px;
   position: absolute;
   left: 64px;
@@ -50,24 +50,24 @@
   font-size: 18px;
   z-index: 2;
   margin: 0;  
-}
+}*/
 
-.header__link {
+/*.header__link {
   color: #2f80ed;
   text-decoration: none;
-}
+}*/
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+/*.header__square-pic {
   height: 568px;
   width: 568px;
   background-color: #2F80ed;
   position: absolute;
   right: 0;
   top: 64px;
-}
+}*/
 
-.header__main-illustration {
+/*.header__main-illustration {
   height: 608px;
   width: 765px;
   background-image: url(../images/header-image.png);
@@ -76,12 +76,12 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-}
+}*/
 
-.description {
+/*.description {
   display: block;
   margin-top: 100px;  
-}
+}*/
 
 .two-columns {
   width: 80%;
