@@ -286,7 +286,7 @@
   }
 }*/
 
-.footer {
+/*.footer {
   box-sizing: border-box;
   padding: 60px 0 40px;
   min-height: 350px;
@@ -325,7 +325,7 @@
 
 .footer__column_content_info {
   margin-left: 0;
-}
+} 
 
 .footer__column-heading {
   font-weight: bold;
@@ -351,16 +351,15 @@
 
 .footer__column_content_social {
    margin-left: 0;
-}
+}*/
 
-.footer__social-icon {
+/*.footer__social-icon {
   height: 16px;
   width: 16px;
   padding-right: 10px;
 }
-
   
-/*.resources {
+  .resources {
   box-sizing: border-box;
   padding-top: 100px;
   /*position: relative;
