@@ -5,4 +5,8 @@
     color: #2F80ed;;
     text-align: left;
   }
+
+  .khan__buy-link:hover {
+    opacity: .3;
+  }
   
