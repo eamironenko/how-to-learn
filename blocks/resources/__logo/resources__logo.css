@@ -2,7 +2,12 @@
     width: 270px;
     height: 38px;
     margin: 0;
-    /*border: 1px solid red;*/
+    cursor: pointer;    
+  }
+
+.resources__logo:hover {
+    opacity: .3;
+    transition: linear 3s;
   }
 
   
